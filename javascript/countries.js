@@ -34,5 +34,19 @@ const Countries = [
     Image: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
     Continent: "Asia"
 },
-
+{
+    Name: "Malaysia",
+    Image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/255px-Flag_of_Malaysia.svg.png",
+    Continent: "Asia"
+},
+{
+    Name: "France",
+    Image: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
+    Continent: "Europe"
+},
+{
+    Name: "Argentina",
+    Image: "https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg",
+    Continent: "South America"
+}
 ]
