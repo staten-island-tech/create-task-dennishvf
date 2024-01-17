@@ -50,3 +50,4 @@ const Countries = [
     Continent: "South America"
 }
 ]
+export{Countries};
