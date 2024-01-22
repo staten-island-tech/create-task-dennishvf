@@ -13,3 +13,14 @@ function iinsert(country){
      ;
     }
  iinsert(rc)
+
+ //search bar
+ Domselectors.Form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var submission= `${Domselectors.SearchBar.value}`;
+    
+    if (submission != Countries.Continent ){
+        Domselectors.Answer.textContent= "Wrong Answer :(";
+        Domselectors.FlexCotnainer.innerHTML="";
+    }
+})
