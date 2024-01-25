@@ -4,6 +4,6 @@ const Domselectors = {
     SearchBar: document.getElementById("search-bar"),
     Card: document.querySelector(".card"),
     Answer: document.getElementById("answer-message"),
-    FlexCotnainer: document.getElementById("flex-container")
+    FlexContainer: document.getElementById("flex-container")
 }
 export{Domselectors}
