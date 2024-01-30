@@ -14,7 +14,7 @@ function iinsert(country){
      </div>`)
     }
  iinsert(rc)
-
+ console.log(submission,Countries)
  //search bar
  Domselectors.Form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -26,6 +26,7 @@ function iinsert(country){
     }
     else {
         Domselectors.FlexContainer.innerHTML="";
+        Domselectors.Answer.textContent="";
         iinsert(rc)
     }
 })
