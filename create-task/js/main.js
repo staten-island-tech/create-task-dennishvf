@@ -3,8 +3,8 @@ import {Countries} from './countries';
 import "../css/style.css";
 
 //to get random country
-const random = Math.floor(Math.random() * Countries.length);
-const rc = (Countries[random])
+let random = Math.floor(Math.random() * Countries.length);
+let rc = (Countries[random])
 //Initial card
 function iinsert(country){
          document.getElementById("flex-container").insertAdjacentHTML("afterbegin",
@@ -14,12 +14,11 @@ function iinsert(country){
      </div>`)
     }
  iinsert(rc)
- 
+
  //search bar
  Domselectors.Form.addEventListener("submit", function (event) {
     event.preventDefault();
     const submission= `${Domselectors.SearchBar.value}`;
-    console.log(rc.Continent)
     if (submission != rc.Continent ){
         Domselectors.Answer.textContent= "Wrong Answer :(";
 
@@ -27,5 +26,8 @@ function iinsert(country){
     else {
         Domselectors.FlexContainer.innerHTML="";
         Domselectors.Answer.textContent="";
+        random = Math.floor(Math.random() * Countries.length);
+        rc = (Countries[random])
+        iinsert(rc)
     }
 })
