@@ -14,19 +14,18 @@ function iinsert(country){
      </div>`)
     }
  iinsert(rc)
- console.log(submission,Countries)
+ 
  //search bar
  Domselectors.Form.addEventListener("submit", function (event) {
     event.preventDefault();
     const submission= `${Domselectors.SearchBar.value}`;
-    
-    if (submission != Countries.Continent ){
+    console.log(rc.Continent)
+    if (submission != rc.Continent ){
         Domselectors.Answer.textContent= "Wrong Answer :(";
 
     }
     else {
         Domselectors.FlexContainer.innerHTML="";
         Domselectors.Answer.textContent="";
-        iinsert(rc)
     }
 })
