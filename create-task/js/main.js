@@ -19,6 +19,7 @@ function iinsert(country){
  Domselectors.Form.addEventListener("submit", function (event) {
     event.preventDefault();
     const submission= `${Domselectors.SearchBar.value}`;
+    
     if (submission != rc.Continent ){
         Domselectors.Answer.textContent= "Wrong Answer :(";
 
