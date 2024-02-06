@@ -3,6 +3,7 @@ import {Countries} from './countries';
 import "../css/style.css";
 
 //to get random country
+while(){
 let random = Math.floor(Math.random() * Countries.length);
 let rc = (Countries[random])
 //Initial card
@@ -31,4 +32,4 @@ function iinsert(country){
         rc = (Countries[random])
         iinsert(rc)
     }
-})
+})}
