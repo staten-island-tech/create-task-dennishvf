@@ -7,7 +7,7 @@ import "../css/style.css";
 let random = Math.floor(Math.random() * Countries.length);
 let rc = (Countries[random])
 //Initial card
-function iinsert(country){
+function insert(country){
          document.getElementById("flex-container").insertAdjacentHTML("afterbegin",
      `<div class="card">
      <h1 class="card-title">${country.Name}</h1>
@@ -16,7 +16,7 @@ function iinsert(country){
     }
     
 
- iinsert(rc)
+ insert(rc)
  
 
  //search bar
@@ -33,7 +33,7 @@ function iinsert(country){
         Domselectors.Answer.textContent="";
         random = Math.floor(Math.random() * Countries.length);
         rc = (Countries[random])
-        iinsert(rc)
+        insert(rc)
     }
 })
 console.log("ANSWER KEY")
