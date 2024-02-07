@@ -3,7 +3,7 @@ import {Countries} from './countries';
 import "../css/style.css";
 
 //to get random country
-while(){
+
 let random = Math.floor(Math.random() * Countries.length);
 let rc = (Countries[random])
 //Initial card
@@ -14,7 +14,10 @@ function iinsert(country){
      <img src="${country.Image}" alt="" class="card-image">
      </div>`)
     }
+    
+
  iinsert(rc)
+ 
 
  //search bar
  Domselectors.Form.addEventListener("submit", function (event) {
@@ -32,4 +35,13 @@ function iinsert(country){
         rc = (Countries[random])
         iinsert(rc)
     }
-})}
+})
+console.log("ANSWER KEY")
+function AnswerKey(country) {
+    console.log(`Country: ${country.Name}, Continent: ${country.Continent}`);
+}
+
+Countries.forEach(country => AnswerKey(country));
+
+   
+
