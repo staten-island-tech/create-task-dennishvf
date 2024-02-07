@@ -5,6 +5,5 @@ const Domselectors = {
     Card: document.querySelector(".card"),
     Answer: document.getElementById("answer-message"),
     FlexContainer: document.getElementById("flex-container"),
-    Encourage: document.getElementById("answer2-message")
 }
 export{Domselectors}
