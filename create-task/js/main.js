@@ -35,13 +35,16 @@ function insert(country){
         rc = (Countries[random])
         insert(rc)
     }
+    function AnswerKey(country) {
+        console.log(`Country: ${country.Name}, Continent: ${country.Continent}`);
+    }
+    
+    
+    Countries.forEach(country => AnswerKey(country));
+    console.log("ANSWER KEY")
 })
-console.log("ANSWER KEY")
-function AnswerKey(country) {
-    console.log(`Country: ${country.Name}, Continent: ${country.Continent}`);
-}
 
-Countries.forEach(country => AnswerKey(country));
+
 
    
 
